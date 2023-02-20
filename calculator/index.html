@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="calculator-row">
+      <div class="grid-4 bg-gray3">
+        <section class="fw screen">0</section>
+      </div>
+    </div>
+    <div class="calculator-row">
+      <div class="grid-2 center">
+        <button name="clear" class="bg-gray1 calculator-button">C</button>
+      </div>
+      <div class="grid-1 center">
+        <button name="back" class="bg-gray1 calculator-button">←</button>
+      </div>
+      <div class="grid-1 center">
+        <button name="op" data-value="DIVIDE" class="fw bg-orange1 calculator-button">÷</button>
+      </div>
+    </div>
+
+    <div class="calculator-row">
+      <div class="grid-1 center">
+        <button name="num" data-value="7" class="bg-gray1 calculator-button">7</button>
+      </div>
+      <div class="grid-1 center">
+        <button name="num" data-value="8" class="bg-gray1 calculator-button">8</button>
+      </div>
+      <div class="grid-1 center">
+        <button name="num" data-value="9" class="bg-gray1 calculator-button">9</button>
+      </div>
+      <div class="grid-1 center">
+        <button name="op" data-value="MULTIPLE" class="fw bg-orange1 calculator-button">X</button>
+      </div>
+    </div>
+
+    <div class="calculator-row">
+      <div class="grid-1 center">
+        <button name="num" data-value="4" class="bg-gray1 calculator-button">4</button>
+      </div>
+      <div class="grid-1 center">
+        <button name="num" data-value="5" class="bg-gray1 calculator-button">5</button>
+      </div>
+      <div class="grid-1 center">
+        <button name="num" data-value="6" class="bg-gray1 calculator-button">6</button>
+      </div>
+      <div class="grid-1 center">
+        <button name="op" data-value="SUBTRACT" class="fw bg-orange1 calculator-button">-</button>
+      </div>
+    </div>
+
+    <div class="calculator-row">
+      <div class="grid-1">
+        <button name="num" data-value="1" class="bg-gray1 calculator-button">1</button>
+      </div>
+      <div class="grid-1">
+        <button name="num" data-value="2" class="bg-gray1 calculator-button">2</button>
+      </div>
+      <div class="grid-1">
+        <button name="num" data-value="3" class="bg-gray1 calculator-button">3</button>
+      </div>
+      <div class="grid-1">
+        <button name="op" data-value="ADD" class="fw bg-orange1 calculator-button">+</button>
+      </div>
+    </div>
+
+    <div class="calculator-row">
+      <div class="grid-3">
+        <button name="num" data-value="0" class="bg-gray1 calculator-button">0</button>
+      </div>
+      <div class="grid-1">
+        <button name="eq" class="fw bg-orange1 calculator-button">=</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./fn.js"></script>
+  <script src="./state.js"></script>
+  <script src="./events.js"></script>
+</body>
+
+</html>

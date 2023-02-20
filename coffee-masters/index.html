@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <header class="page-header">
+      <img class="page-icon" src="coffee_masters_logo.png" />
+      <h2 class="page-title">Coffee Masters</h2>
+    </header>
+
+    <div class="bill-container">
+      <section class="bill-section box">
+        <h4 class="section-title">items</h4>
+        <ul>
+          <li class="bill-item">
+            <div class="bill-times">1x</div>
+            <div class="bill-item-detail">Cappucino</div>
+            <div class="bill-item-price">$6.00</div>
+            <div class="bill-ingredients-detail">Light Foam</div>
+          </li>
+          <li class="bill-item">
+            <div class="bill-times">1x</div>
+            <div class="bill-item-detail">Cappucino</div>
+            <div class="bill-item-price">$6.00</div>
+            <div class="bill-ingredients-detail">Light Foam</div>
+          </li>
+          <li class="bill-item">
+            <div class="bill-times">1x</div>
+            <div class="bill-item-detail">Cappucino</div>
+            <div class="bill-item-price">$6.00</div>
+            <div class="bill-ingredients-detail">Light Foam</div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="form-section">
+        <div class="box">
+          <h4 class="section-title">name</h4>
+          <div class="overlay-input-group">
+            <label for="name" class="overlay-input-label">Name for order</label>
+            <input type="text" id="name" name="name" class="overlay-input" />
+          </div>
+        </div>
+
+        <div class="box ">
+          <h4 class="section-title">payment</h>
+          <div class="overlay-input-group">
+            <label for="card-number" class="overlay-input-label">Card number</label>
+            <input type="text" id="card-number" name="card-number" class="overlay-input" />
+          </div>
+          <div class="overlay-input-group">
+            <label for="ccv-number" class="overlay-input-label">CCV number</label>
+            <input type="text" id="ccv-number" name="ccv-number" class="overlay-input" />
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="total">
+    <table class="total-table">
+      <tbody>
+        <tr>
+          <td>Subtotal:</td>
+          <td>$19.27</td>
+        </tr>
+        <tr>
+          <td>Tax:</td>
+          <td>$0.96</td>
+        </tr>
+        <tr class="total-row">
+          <td>Total:</td>
+          <td>$20.23</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="button-container">
+    <button>Place Order</button>
+  </div>
+
+</body>
+
+</html>
