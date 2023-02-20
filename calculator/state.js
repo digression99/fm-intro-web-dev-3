@@ -1,8 +1,5 @@
-// you can load multiple js files.
-// that will cause delays and need to think about orders,
-// but it's the easiest.
+// extensible version of brian's calculator.
 
-// enums
 const STATUS = {
   LEFT: 'LEFT',
   OP: 'OP',
@@ -40,7 +37,7 @@ const calculate = (left, op, right) => {
     return left - right
   } else if (op === OPERATOR.DIVIDE) {
     const result = left / right
-    return isNaN(result) ? 'Error' : result
+    return isNaN(result) || !isFinite(result) ? 'Error' : result
   } else if (op === OPERATOR.MULTIPLE) {
     return left * right
   }
@@ -111,9 +108,11 @@ const handleActions = (state = initialState, action) => {
       } else if (state.status === STATUS.RIGHT) {
         const result = getResult(state)
         return m({
-          status: STATUS.RESULT,
+          status: STATUS.RIGHT,
           left: result,
-          display: result
+          right: '0',
+          display: result,
+          operator
         })
       } else if (state.status === STATUS.RESULT) {
         return m({ status: STATUS.OP, operator })
